@@ -42,25 +42,25 @@ def Downloader(link):
     if test1080.status_code == 200:
         print("  M3U8: https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_1080.m3u8")
         m3u8 = "https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_1080.m3u8"
-        dimention = "1080p"
+        resolution = "1080p"
     else:
         test720 = session.get("https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_720.m3u8")
         if test720.status_code == 200:
             print("  M3U8: https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_720.m3u8")
             m3u8 = "https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_720.m3u8"
-            dimention = "720p"
+            resolution = "720p"
         else:
             test360 = session.get("https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_360.m3u8")
             if test360.status_code == 200:
                 print("  M3U8: https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_360.m3u8")
                 m3u8 = "https://d2l9m895ubsn89.cloudfront.net/" + type_demande + "/" + id_dl + ".ts/playlist_360.m3u8"
-                dimention = "360p"
+                resolution = "360p"
             else:
                 print("  No M3U8 found.")
                 exit()
                 
     print("  Launching of the download... \n\n")
-    command = 'N_m3u8DL-CLI_v2.9.0.exe {m3u8_url} --disableDateInfo --noProxy --enableDelAfterDone --workDir "./" --saveName "{name_out}"'.format(m3u8_url = m3u8, name_out = name + " [VF][" + dimention + "]")
+    command = 'N_m3u8DL-CLI_v2.9.0.exe {m3u8_url} --disableDateInfo --noProxy --enableDelAfterDone --workDir "./" --saveName "{name_out}"'.format(m3u8_url = m3u8, name_out = name + " [VF][" + resolution + "]")
     subprocess.call(command, shell=True)
 
 def DownloadByLink():
