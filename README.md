@@ -3,7 +3,7 @@
 #### This is a downloader capable of downloading the video from [Gulli Replay](https://replay.gulli.fr/) and [Gulli MAX](https://svod.gulli.fr/) . **You do not need to have an account** .
 
 # Dependence necessary:
-> os, ctypes, io, colorama, re, cloudscraper, subprocess, sys, json, clint.textui, codecs
+> os, requests_html, subprocess, sys
 
 # How to use
 > ```py __main__.py```
