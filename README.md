@@ -9,7 +9,7 @@
 > ```py __main__.py```
 
 # Some information
-> This tool allows you to download by link or in BATCH (download a complete season in one go) via the HLS flux.
+> This tool allows you to download by link or in BATCH (download a complete season in one shot) via the HLS flux.
 > You need to download [N_m3u8DL-CLI](https://github.com/nilaoda/N_m3u8DL-CLI) and [ffmpeg](https://ffmpeg.org/) and put them in the same folder as __main__.py
 
 # What it looks like
