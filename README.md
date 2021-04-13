@@ -1,5 +1,7 @@
 # Gulli Downloader
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/aca8cc832f324d85b955b1448d67eb0b)](https://app.codacy.com/gh/NanDesuKa-FR/gulli-downloader?utm_source=github.com&utm_medium=referral&utm_content=NanDesuKa-FR/gulli-downloader&utm_campaign=Badge_Grade_Settings)
+
 #### This is a downloader capable of downloading the video from [Gulli Replay](https://replay.gulli.fr/) and [Gulli MAX](https://svod.gulli.fr/) . **You do not need to have an account** .
 
 # Dependence necessary:
